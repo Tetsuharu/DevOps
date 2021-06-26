@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import random
 
 section1 = random.randint(1,255)
