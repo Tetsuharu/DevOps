@@ -32,3 +32,4 @@ if __name__ == '__main__':
     # enable有密码的情况
     # qytang_multicmd('192.168.31.200', 'root', 'cisco', cmd_list, enable='cisco\n')
 
+

@@ -1,4 +1,3 @@
-
 import logging
 logging.getLogger("kamene.runtime").setLevel(logging.ERROR)
 from kamene.all import *
@@ -51,7 +50,6 @@ class NewPing(QYTPING):
         else:
             return f'<{self.__class__.__name__} => srcip: {self.srcip}, dstip: {self.ip}, size: {self.length}>'
 
-
 if __name__ == '__main__':
     ping = QYTPING('192.168.31.1')
     total_len = 70
@@ -69,7 +67,7 @@ if __name__ == '__main__':
     print(ping)
     ping.ping()
     print_new('set ping src ip address')
-    ping.srcip = '192.168.31.123'
+    ping.srcip = '192.168.31.100'
     print(ping)
     ping.ping()
     print_new('new class NewPing', '=')
@@ -77,4 +75,5 @@ if __name__ == '__main__':
     newping.length = 300
     print(newping)
     newping.ping()
+
 

@@ -9,9 +9,9 @@ def qytang_ping(ip):
     ping_pkt = IP(dst=ip) / ICMP()
     ping_result = sr1(ping_pkt, timeout=2, verbose=False)
     if ping_result:
-        return ip + " 通！"
+        return ip
     else:
-        return ip + " 不通！"
+        return ''
 
 if __name__ == '__main__':
     result = qytang_ping('183.79.102.200')
@@ -19,4 +19,7 @@ if __name__ == '__main__':
         print(str(result))
     else:
         print(str(result))
+
+
+
 
